@@ -10,10 +10,22 @@
 </head>
 <body>
     <h1>Dice Game JS/CSS/HTML</h1>
+    <h2>Player <span id="player_win">x</span> Wins!</h2>
     <main id="dices">
-        <div id="p1" class="n1"></div>
-        <div id="p2"></div>
-        <img src="dices/dice4.svg" alt="dice">
+        <div class="col">
+            <span>Player1</span>
+            <div id="p1" class="n1">
+                <img src="dices/dice1.svg" alt="dice">
+            </div>
+        </div>
+        <div class="vs"><span>VS</span></div>
+        <div class="col">
+            <span>Player2</span>
+                <div id="p2">
+                    <img src="dices/dice2.svg" alt="dice">
+                </div>
+        </div>
+        
     </main>
 </body>
 </html>
