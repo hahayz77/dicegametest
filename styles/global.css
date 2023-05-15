@@ -1,3 +1,51 @@
-h1{
-    color: red;
+body{
+    background-color: slategray;
+    overflow-x: hidden;
+    display: grid;
 }
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    color: lightgreen;
+}
+
+#p1 , #p2{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+#p1{
+    background-color: navy;
+}
+
+#p2{
+    background-color: darkred;
+}
+
+.n1::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* .n1::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 100%;
+} */
