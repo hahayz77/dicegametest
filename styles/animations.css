@@ -1,0 +1,29 @@
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes spinAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .winner {
+    animation: scaleAnimation 2s ease-in-out;
+  }
+  
+  .spin {
+    animation: spinAnimation 1s ease-in-out;
+  }
+  

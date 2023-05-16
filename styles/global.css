@@ -24,7 +24,27 @@ main {
     height: 100%;
 }
 
-h1, h2, p, span{
+input {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: var(--font);
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+input:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+h1,
+h2,
+p,
+span {
     color: var(--font);
     font-family: system-ui;
 }
@@ -47,10 +67,10 @@ h2 {
     width: 150px;
     margin-top: 25%;
     position: relative;
+    border-radius: 10px;
 }
 
 img {
-    transform: translateY(-5px);
     border-radius: 10px;
 }
 
