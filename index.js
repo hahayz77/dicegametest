@@ -7,16 +7,18 @@ document.getElementById("play").addEventListener("click", function () {
 
     const randomNumberP1 = Math.floor(Math.random() * 6) + 1;
     const randomNumberP2 = Math.floor(Math.random() * 6) + 1;
-    p1.src = `dices/dice${randomNumberP1}.svg`;
-    p2.src = `dices/dice${randomNumberP2}.svg`;
 
     p1.animate([{ transform: 'rotateZ(0deg)' },
     { transform: 'rotateZ(720deg)' }],
-        { duration: 500, easing: "ease-out" })
+    { duration: 500, easing: "ease-out" })
     p2.animate([{ transform: 'rotateZ(0deg)' }, 
     { transform: 'rotateZ(720deg)' }],
-        { duration: 500, easing: "ease-out" })
+    { duration: 500, easing: "ease-out" })
 
+    
+    p1.src = `dices/dice${randomNumberP1}.svg`;
+    p2.src = `dices/dice${randomNumberP2}.svg`;
+    
     setTimeout(() => {
 
         if (randomNumberP1 > randomNumberP2) {
@@ -35,5 +37,5 @@ document.getElementById("play").addEventListener("click", function () {
             p2.animate([{ transform: "scale(1)", backgroundColor: "gray" }, { transform: "scale(1.2)", backgroundColor: "gray" }, { transform: "scale(1)", backgroundColor: "gray" }], { duration: 500, easing: "ease-out" })
         }
     }, 500)
-})
 
+})
